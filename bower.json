@@ -1,0 +1,6 @@
+{
+  "name": "jekyll-assets-test-case",
+  "dependencies": {
+    "mustache.js": "mustache#^2.2.1"
+  }
+}

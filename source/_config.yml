@@ -1,0 +1,37 @@
+# See https://jekyllrb.com/docs/configuration
+
+# Jekyll setup
+# So we can connect from a host machine running Vagrant
+host: 0.0.0.0
+destination:  ../build
+
+# Site configuration
+markdown: kramdown
+paginate_path: /pagina:num
+gems:
+    - jekyll-assets
+    - uglifier
+    - sass
+    - jekyll-lunr-js-search
+    - jekyll-sitemap
+exclude:
+    - _assets/lib
+    # Prevent demo files to be included in the sitemap.xml
+    - _assets/fonts/*.html
+# Site defaults
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "default"
+            title: "Hello, world"
+            description: >
+                Hello world.
+
+compress_html:
+    ignore:
+        envs: [development]
+assets:
+    sources:
+        - "_assets/lib"
