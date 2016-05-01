@@ -8,10 +8,10 @@ A test case for jekyll/jekyll-assets#268
 3. `jekyll build`.
 4. Check line 572 at `build/assets/app.js`, and compare it to line 571 at `source/_assets/lib/mustache.js/mustache.js`.
 
-Results:
+Expected:
 
     mustache.tags = [ '{{', '}}' ];
 
-Expected:
+Results:
 
     mustache.tags = [ ', ' ];
